@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Projeto final do curso de Visualizações
 
-You can use the [editor on GitHub](https://github.com/euleralencar/cienciadados2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Para o TCC do curso, você terá de entregar um TidyTuesday! O TidyTuesday é um evento semanal criado para engajar a comunidade no uso do R para análise de dados. Toda semana uma nova base de dados é liberada, e as pessoas da comunidade montam visualizações para compartilhar nas redes sociais. Se quiser conhecer mais, siga a hashtag #tidytuesday no Twitter! **O trabalho proposto pelo Curso-r é o exemplo das Olimpíadas disponível no github da TidyTuesday.**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### [O projeto](https://euleralencar.github.io/pages/relatorio_cd2.html)
 
-### Markdown
+O nosso projeto tem como objetivo analisar o desempenho do Brasil ao longo das Olimpíadas. O relatório foi desenvolvido utilizando o pacote **readthedown** e pode ser acessado por este **[link](https://euleralencar.github.io/pages/relatorio_cd2.html)**. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Dados
 
-```markdown
-Syntax highlighted code block
+Para acessar os dados pelo R é possível utilizar o comando abaixo:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```r
+olympics <- readr::read_csv(
+    'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-07-27/olympics.csv&#39;
+    )
 ```
+### Suporte e Contato
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Sugestões e/ou críticas podem ser enviadas para 'euleralencar@gmail.com'. 
 
-### Jekyll Themes
+### Agradecimentos
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/euleralencar/cienciadados2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Agradecimento a CursoR, especialmente a Beatriz Milz e ao Júlio Trecenti, que trouxeram conteúdo excelente e de forma didática.
